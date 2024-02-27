@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url('sign.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #f6b605;
+    padding-left: 100px;
+    padding-right: 135px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px yellow;
+    text-align: center;
+    margin-right: 50%;
+    margin-top: 1%;
+    
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 400%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.user{
+    position: relative;
+    display: flex;
+}
+.pass{
+    display: flex;
+}
+.login-container button {
+    background-color: #ff1100;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Sign Up</h2>
+        <form  method="POST">
+            <input type="text" name="username" placeholder="Full Name" required>
+            <br>
+            <input type="text" name="password" placeholder="E-mail" required >
+            
+            <br>
+            <input id="pws" type="password" name="password" placeholder="New Password*" required >
+            
+            <br>
+            <input id="cpws" type="password" name="password" placeholder="Confirm Password*" required>
+            <br>
+            <br>
+            <button id="submit" type="submit" ><a href="index.html">Create account</a></button>
+            <p>Already have an account?<a href="index.html"><b>   Login</b></a></p>
+        </form>
+    </div>
+    
+</body>
+<script>
+    usernameInput.addEventListener('click', () => {
+        alert("Account created successfully"); 
+        });
+    function SignIn(){
+        const pws = document.getElementById("pws").value;
+        const cpws = document.getElementById("cpws").value;
+        if(pws===cpws)
+            alert("Account created successfully");            
+        else
+        {
+            alert("Password & confirm password are mismatched");
+            //window.location.href="file:///C:/Users/LENOVO/Desktop/BookMyShow/index.html";
+        }
+
+    }
+</script>
+</html>

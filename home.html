@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foodhub</title>
+ <style>
+     
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(242, 238, 230);
+}
+.book{
+  display: flex;
+  
+}
+header {
+  background-color: #f6b605;
+  color: black;
+  padding: 50px;
+  box-shadow: 0 0 25px rgb(67, 67, 42);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px;
+}
+
+header nav a:hover {
+  background-color: #dfd4d4;
+}
+
+main {
+  padding: 10px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+section .movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section .movies .movie {
+  width: 25%;
+  padding: 10px;
+}
+
+section .movies .movie img {
+  width: 100%;
+}
+
+section .movies .movie h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+section .movies .movie p {
+  margin: 0;
+}
+
+section .dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section .dishes .dish {
+  width: 25%;
+  padding: 10px;
+}
+
+section .dishes .dish img {
+  width: 100%;
+}
+
+section .dishes .dish h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+section .dishes .dish p {
+  margin: 0;
+}
+ </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 70px;"> BookMyShow</h1>
+    <nav>
+      <a style="font-size: 30px; color: black;" href="#">Home</a>
+      <a style="font-size: 30px; color: black;" href="index.html">login</a>  
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 style="color:black;">Recommended Movies</h1>
+      <div class="movies">
+        <div class="movie">
+          <img src="mark.jpg" alt="Movie1">
+          <h2>Mark Antony</h2>
+        </div>
+        <div class="movie">
+          <img src="kushi.jpg" alt="Movie 2">
+          <h2>Kushi</h2>
+        </div>
+        <div class="movie">
+          <img src="jawan.jpg" alt="Movie 3" style="height: 94%;">
+          <h2> Jawan</h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 style="color:black">The Best Of Live Eavents</h1>
+      <div class="dishes">
+        <div class="dish">
+          <img src="event1.jpg" alt=" Event 1">
+          <h1>Music</h1>
+          
+        </div>
+        <div class="dish">
+            <img src="event2.jpg" alt=" Event 2" >
+            <h1> Halloween</h1>
+            
+          </div>
+        <div class="dish">
+          <img src="event3.jpg" alt="Event 3">
+          <h1>Concert</h1>
+          </div>
+          </div>
+          </section>
+          </main>
+</body></html>
